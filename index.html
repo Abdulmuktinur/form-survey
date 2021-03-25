@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Survey</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="main">
+      <section class="container">
+        <h1 id="title" class="text-center">Form Survei FreeCodeCamp</h1>
+        <p id="description" class="description text-center">Terima kasih telah meluangkan waktu untuk membantu kami meningkatkan platform</p>
+        <form id="survey-form" action="">
+          <div class="form-group">
+            <label for="name" id="name-label">Nama</label>
+            <input type="text" placeholder="Enter your name" id="name" name="name" class="form-control" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="number" id="number-label">Age</label>
+            <input class="form-control" min="10" max="50" type="number" placeholder="Enter your age" id="number" name="number" />
+          </div>
+
+          <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="dropdown" class="form-control" required>
+              <option disabled selected value="1">Select current role</option>
+              <option value="2">Student</option>
+              <option value="3">Full Time Job</option>
+              <option value="4">Full Time Learner</option>
+              <option value="5">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label><input type="radio" value="definitely" name="radio-button" class="input-radio" checked />Definitely</label>
+            <label><input type="radio" value="maybe" name="radio-button" class="input-radio" />Maybe</label>
+            <label><input type="radio" value="not-sure" name="radio-button" class="input-radio" />Not Sure</label>
+          </div>
+
+          <div class="form-group">
+            <p>What would you like to see improved? <small>(Check all that apply)</small></p>
+            <label><input type="checkbox" name="centang" value="Front end project" class="input-checkbox" checked />Front End Projects</label>
+            <label><input type="checkbox" name="centang" value="Back end project" class="input-checkbox" />Back End Projects</label>
+            <label><input type="checkbox" name="centang" value="Data Visualization" class="input-checkbox" />Data Visualization</label>
+            <label><input type="checkbox" name="centang" value="Challenges" class="input-checkbox" />Challenges</label>
+            <label><input type="checkbox" name="centang" value="Videos" class="input-checkbox" />Videos</label>
+            <label><input type="checkbox" name="centang" value="Forum" class="input-checkbox" />Forum</label>
+            <label><input type="checkbox" name="centang" value="additional-courses" class="input-checkbox" />Additional-courses</label>
+          </div>
+
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea name="commens" id="comments" class="input-textarea" placeholder="Enter your comments"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button id="submit" class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
